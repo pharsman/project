@@ -1,18 +1,16 @@
 <template>
-  <div class="flex">
-    <SideMenu />
-    <RouterView />
-  </div>
+  <Left />
+  <HeaderTop />
+  <Main />
+  <Right />
 
-
-    <HeaderTop />
-    <HeaderRight />
 </template>
 
 <script setup>
-import SideMenu from '@/components/SideMenu.vue';
 import HeaderTop from '@/components/HeaderTop.vue';
-import HeaderRight from '@/components/HeaderRight.vue'
+import Right from './components/right/Right.vue';
+import Left from './components/left/Left.vue'
+import Main from './components/main/Main.vue';
 
 </script>
 
@@ -28,7 +26,8 @@ import HeaderRight from '@/components/HeaderRight.vue'
 body {
   background: #393D5E;
 }
-.flex{
+
+.flexs {
   display: flex;
   align-items: flex-start;
 }

@@ -76,7 +76,7 @@ const list = ref([
         height: 44px;
         padding: 12px 16px;
         background: rgba(255, 255, 255, 0.001);
-box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.1);
+        box-shadow: inset 0px -1px 0px rgba(255, 255, 255, 0.1);
 
 
         h2 {

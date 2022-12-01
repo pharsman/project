@@ -1,5 +1,5 @@
 <template>
-    <div class="search">
+    <div class="header">
         <input type="search" name="search" id="search" autocomplete="off">
     </div>
 
@@ -17,25 +17,25 @@
 
 
 
-.search {
+.header {
     position: absolute;
-    width: calc(100% - 488px);
+    width: calc(100% - 546px);
     height: 44px;
-    left: 244px;
+    left: 320px;
     top: 0;
     background: #2C2F48;
+
     i {
         img {
             margin: 0 auto;
         }
     }
-
     #search {
         width: 442px;
+        margin-left: calc(50% - 221PX);
+        margin-top: 10px;
         height: 24px;
         color: #ffffff;
-        margin-left: calc(50% - 221px);
-        margin-top: 10px;
         border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 4px;
         outline: none;
