@@ -8,7 +8,7 @@
                         <img :src="soc.url">
                     </span>
                     <span class="tag">
-                        {{ soc.tag }}
+                        <a :href="soc.link" target="blank">{{ soc.tag }}</a>
                     </span>
                 </div>
             </li>
@@ -22,12 +22,14 @@ const social = ref([
     {
         name: 'instagram',
         tag: '@aleksondesign',
-        url: 'src/assets/img/instagram.png'
+        url: 'src/assets/img/instagram.png',
+        link: 'https://www.instagram.com/aksondesign/'
     },
     {
         name: 'twitter',
         tag: '@alsonvady',
-        url: 'src/assets/img/twitter.png'
+        url: 'src/assets/img/twitter.png',
+        link: 'https://twitter.com/aksonvady'
     }
 ]) 
 </script>
@@ -77,9 +79,12 @@ const social = ref([
                     font-size: 15px;
                     line-height: 50%;
                     text-decoration-line: underline;
-                    color: #FFFFFF;
                     flex: none;
                     margin-top: 30px;
+
+                    a {
+                        color: #ffffff;
+                    }
                 }
 
                 img {

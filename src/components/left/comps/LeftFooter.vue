@@ -25,7 +25,6 @@
     height: 72px;
     background: #1D203E;
     box-shadow: inset -1px 0px 0px rgba(255, 255, 255, 0.1);
-    display: flex;
 
     ul {
         width: 120px;

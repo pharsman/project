@@ -15,8 +15,5 @@ import Music from './comps/Music.vue'
 </script>
 
 <style lang="scss" scoped>
-.flex {
-    display: flex;
-    align-items: flex-start;
-}
+
 </style>

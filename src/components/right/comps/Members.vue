@@ -84,6 +84,7 @@ section {
             font-size: 15px;
             line-height: 18px;
             color: rgba(255, 255, 255, 0.55);
+            cursor: default;
         }
 
         .see {

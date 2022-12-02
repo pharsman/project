@@ -1,34 +1,32 @@
 <template>
-  <Left />
-  <HeaderTop />
-  <Main />
-  <Right />
-
+  <div class="dark" :class="(mode === 'dark') ? 'dark' : 'light'">
+    <Left />
+    <HeaderTop :mode="mode" @toggle="toggle" />
+    <Main />
+    <Right />
+  </div>
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import HeaderTop from '@/components/HeaderTop.vue';
 import Right from './components/right/Right.vue';
 import Left from './components/left/Left.vue'
 import Main from './components/main/Main.vue';
 
+const mode = ref('dark')
+
+const toggle = () => {
+  if (mode.value === 'dark') {
+    mode.value = 'light'
+  } else {
+    mode.value = 'dark'
+  }
+  console.log(mode.value)
+}
+
 </script>
 
 <style lang="scss">
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-  text-decoration: none;
-}
 
-body {
-  background: #393D5E;
-}
-
-.flexs {
-  display: flex;
-  align-items: flex-start;
-}
 </style>

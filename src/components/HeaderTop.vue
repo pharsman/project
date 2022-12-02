@@ -1,11 +1,27 @@
 <template>
     <div class="header">
         <input type="search" name="search" id="search" autocomplete="off">
+        <h2>{{ mode }} mode</h2>
+        <Toggle @toggle="toggle" />
     </div>
 
 </template>
 
 <script setup>
+import Toggle from './Toggle.vue';
+
+const props = defineProps({
+    mode: {
+        type: String,
+        required: true
+    }
+})
+
+const emit = defineEmits(['toggle'])
+
+const toggle = () => {
+    emit('toggle')
+}
 
 </script>
 
@@ -24,12 +40,14 @@
     left: 320px;
     top: 0;
     background: #2C2F48;
+    display: flex;
 
     i {
         img {
             margin: 0 auto;
         }
     }
+
     #search {
         width: 442px;
         margin-left: calc(50% - 221PX);

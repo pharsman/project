@@ -1,5 +1,5 @@
 <template>
-    <div class="left">
+    <div class="right">
         <HeaderRight />
         <RightSide />
         <Members />
@@ -15,7 +15,7 @@ import RightFooter from './comps/RightFooter.vue';
 </script>
 
 <style scoped lang="scss">
-.left {
+.right {
     position: absolute;
     width: 244px;
     height: 100vh;
